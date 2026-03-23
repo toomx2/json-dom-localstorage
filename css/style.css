@@ -95,3 +95,38 @@ button {
     background: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.data-pedido {
+    font-size: 11px;
+    color: #999;
+}
+
+.itens-venda {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    background: #fdf2f8; /* Fundo levemente rosado para os itens */
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.itens-venda li {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.card-footer {
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    text-align: right;
+    color: #be185d;
+}
