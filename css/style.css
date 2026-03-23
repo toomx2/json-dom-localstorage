@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf2f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 { text-align: center; color: #be185d; }
+
+.controles { margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.botoes { display: flex; gap: 10px; }
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-add { background-color: #db2777; color: white; }
+.btn-add:hover { background-color: #be185d; }
+
+.btn-danger { background-color: #fecdd3; color: #9f1239; }
+.btn-danger:hover { background-color: #fda4af; }
+
+#painel-financeiro {
+    background: #f0fdf4;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #bbf7d0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.destaque { color: #166534; }
+
+.card-pedido {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    background: #fff;
+}
+
+.btn-entregue {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+    background: #10b981;
+    color: white;
+    padding: 5px 10px;
+}

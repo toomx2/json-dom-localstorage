@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Confeitaria - Gestão de Pedidos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🍰 Confeitaria Dashboard</h1>
+
+        <div class="controles">
+            <input type="text" id="input-busca" placeholder="Filtrar por nome do cliente...">
+            <div class="botoes">
+                <button id="btn-gerar-pedido" class="btn-add">Novo Pedido ➕</button>
+                <button id="btn-limpar-tudo" class="btn-danger">Limpar Tudo 🗑️</button>
+            </div>
+        </div>
+
+        <div id="painel-financeiro">
+            <h3>Faturamento Total: <span class="destaque">R$ <span id="faturamento-valor">0.00</span></span></h3>
+        </div>
+
+        <div id="container-pedidos">
+            </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
