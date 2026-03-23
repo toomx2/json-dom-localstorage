@@ -130,3 +130,30 @@ button {
     text-align: right;
     color: #be185d;
 }
+
+.card-footer {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    margin-top: 10px;
+    display: flex; /* Coloca o total e o botão lado a lado */
+    justify-content: space-between; 
+    align-items: center;
+    color: #be185d;
+}
+
+.btn-remover-pedido {
+    background-color: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fca5a5;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: auto; /* Para não ocupar a largura toda do cartão */
+}
+
+.btn-remover-pedido:hover {
+    background-color: #fca5a5;
+    color: #b91c1c;
+}

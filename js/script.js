@@ -30,6 +30,18 @@ function atualizarPainelFinanceiro() {
     displayQtd.textContent = `${listaDePedidos.length} pedidos realizados`;
 }
 
+function removerPedido(idDoPedido) {
+    // Pede confirmação para evitar cliques acidentais
+    if (confirm("Tem a certeza de que deseja eliminar este pedido?")) {
+        // O filter cria uma nova lista apenas com os pedidos que NÃO têm este ID
+        listaDePedidos = listaDePedidos.filter(pedido => pedido.identificadorPedido !== idDoPedido);
+        
+        // Guarda a nova lista no navegador e volta a desenhar o ecrã
+        salvarDados();
+        renderizar();
+    }
+}
+
 function renderizar() {
     if (!containerPedidos) return;
     
@@ -60,6 +72,10 @@ function renderizar() {
             </div>
             <div class="card-footer">
                 <span>Total: <b>R$ ${pedido.totalCalculado.toFixed(2)}</b></span>
+                
+                <button class="btn-remover-pedido" onclick="removerPedido('${pedido.identificadorPedido}')">
+                    ❌ Remover
+                </button>
             </div>
         `;
         containerPedidos.appendChild(div);
