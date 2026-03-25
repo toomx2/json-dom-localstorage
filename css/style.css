@@ -39,7 +39,7 @@ button {
     background-color: #db2777; 
     color: white; 
     width: 100%; 
-    padding: 15px; 
+    padding: 15px;
 }
 
 .btn-add:hover { background-color: #be185d; }
@@ -54,6 +54,13 @@ button {
     background-color: #f472b6;
     color: white;
     padding: 0 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-secundario:hover {
+  transform: translateY(-3px);
+  background-color: #be185d;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 #painel-financeiro {
